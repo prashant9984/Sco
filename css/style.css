@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* TABLE OF CONTENTS  */
+/*------------------------
+1. General
+2. Navbar
+3. Banner
+4. Services
+5. Blog
+6. Contact
+7. Footer
+---------------------*/
+
+
+/* 1 General */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Background color */
+    --secondary-color: #f77949;
+    --bg-blue: #38418e;
+    --bg-white: #fff;
+    --dark-blue: #292b70;
+    --bg-gray: #ecf0f9;
+
+   /* text color */
+
+   --text-black: #1f1f1f;
+   --text-blue: #1f294c;
+   --text-gray: #6d6e7b;
+   --text-white: #fff;
+
+   /* font family */
+
+   --primary-font: 'Montserrat', sans-serif;
+   --secendery-font: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-image: url("../images/page-background.jpg");
+    background-size: cover;
+    background-position: center 0px;
+    font-family: var(--primary-font);
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    overflow-x: hidden;
+}
+
+/* Custem CSS */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-blue);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
+section{
+    padding: 50px 0;
+}
+.main-btn{
+    display: inline-block;
+    border-radius: 26px;
+    transition: 1s;
+    padding: 10px 37px;
+    background-color: var(--secondary-color);
+    color: var(--bg-white);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    box-shadow: 0 0 1px rgb(0, 0,  0%);
+}
+.main-btn:hover{
+    background-color: var(--bg-blue);
+    color: var(--text-white);
+}
+h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--text-blue);
+    font-family: var(--secendery-font);
+    margin-bottom: 16px;
+}
+h2{
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+    color: var(--text-blue);
+    font-family: var(--secendery-font);
+    margin-bottom: 15px;
+    letter-spacing: 0;
+}
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-gray);
+    font-family: var(--secendery-font);
+    margin-bottom: 15px;
+}
+p{
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    font-style: normal;
+    text-align: left;
+}
+
+input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button{
+    border-color: var(--secondary-color) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* 2 Navbar */
+.header-wrapper .navbar{
+    -webkit-transition:all 2s linear;
+    -o-transition:all 2s linear;
+    transition:all 2s linear;
+    background-color: var(--bg-white);
+}
+.header-wrapper .navbar-toggle{
+    border: 0;
+}
+.header-wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header-wrapper .navbar-brand img{
+   max-width: 150px;
+   height: auto;
+}
+
+.header-wrapper .nav-item{
+    margin: 0 10px;
+}
+.header-wrapper .nav-item .nav-link{
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-blue);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+#navbarNav .menu-navbar-nav .nav-item .nav-link:hover{
+    color: var(--secondary-color) !important;
+ }
+.header-scrolled{
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-color: var(--bg-white);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, );
+    -webkit-box-shadow: 0 4px 6px 0 rgba(13, 9, 26, 0.911);
+}
+
+
+/* 3 banner */
+.row{
+    padding-top: 100px;
+}
+
+/* 4 service */
+.service-wrapper h3 span{
+    color: var(--secondary-color);
+}
+.service-wrapper .service-phone{
+    max-width: 70%;
+}
+
+/* 5 blog */
+.blog-wrapper{
+    background-color: #fff;
+}
+.blog-wrapper .newsletter-wrapper{
+    background-color: var(--bg-blue);
+    height: 350px;
+    padding: 5%;
+ 
+}
+.blog-wrapper .newslatter{
+    width: 70%;
+    margin: 0 auto;
+
+}
+.blog-wrapper .form-control{
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+    border-style: solid;
+    border-radius: 26px;
+    color: var(--text-white);
+    font-size: 15px;
+    line-height: 30px;
+    width: 70%;
+    font-weight: 400;
+    padding: 10px 32px;
+    margin: 0 auto;
+}
+
+.blog-wrapper .main-btn{
+    left: 0;
+}
+.blog-wrapper input::placeholder{
+    color: var(--text-white);
+}
+.blog-wrapper a{
+    color: var(--text-blue);
+    text-decoration: none;
+}
+.blog-wrapper .date,
+.banner-wrapper .card a:hover{
+    color: var(--secondary-color);
+}
+
+
+
+/* 6 contact */
+.contact-wrapper input,
+.contact-wrapper textarea{
+    background-color: var(--bg-white);
+    border: var(--text-gray);
+    border-radius: 15px;
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 21px 15px 21px;
+}
+
+ /* footer */
+
+ .footer-wrapper a{
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+ }
+ .footer-wrapper a:hover{
+    color: var(--secondary-color);
+ }
